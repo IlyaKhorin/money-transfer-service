@@ -9,6 +9,7 @@ import org.junit.rules.ExpectedException;
 import settings.TransactionSettings;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 
@@ -30,7 +31,7 @@ public class TransactionManagerTest {
     @Test
     public void queue_shouldCompleteTask() throws ExecutionException, InterruptedException {
         int expectedResult = 123;
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         context.put("value", expectedResult);
 
         Future<Object> future = sut.submit(c -> c.get("value"), context);
@@ -39,8 +40,8 @@ public class TransactionManagerTest {
     }
 
     @Test
-    public void queue_shouldThrowQueueOverflow() throws ExecutionException, InterruptedException {
-        HashMap<String, Object> context = new HashMap<>();
+    public void queue_shouldThrowQueueOverflow() {
+        Map<String, Object> context = new HashMap<>();
 
         Future<Object> future = sut.submit(c -> {
             try {

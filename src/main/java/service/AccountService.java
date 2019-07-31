@@ -8,9 +8,9 @@ import dao.dto.AccountDto;
 import transaction.*;
 
 import java.math.BigDecimal;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
@@ -44,20 +44,20 @@ public class AccountService implements IAccountService{
 
     @Override
     public void delete(long id) throws InterruptedException, ExecutionException {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         context.put("id", id);
         transactionManager.submit(injector.getInstance(DeleteAccountTransaction.class), context).get();
     }
 
     @Override
     public void withdraw(long id, BigDecimal amount) throws InterruptedException, ExecutionException {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         context.put("id", id);
         context.put("amount", amount);
         safeSubmit(injector.getInstance(WithdrawTransaction.class), context);
     }
 
-    private void safeSubmit(ITransaction transaction, HashMap<String, Object> context) throws InterruptedException, ExecutionException {
+    private <T> void safeSubmit(ITransaction<T> transaction, Map<String, Object> context) throws InterruptedException, ExecutionException {
         try {
             transactionManager.submit(transaction, context).get();
         } catch (ExecutionException e) {
@@ -70,7 +70,7 @@ public class AccountService implements IAccountService{
 
     @Override
     public void deposit(long id, BigDecimal amount) throws InterruptedException, ExecutionException {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         context.put("id", id);
         context.put("amount", amount);
         safeSubmit(injector.getInstance(DepositTransaction.class), context);
@@ -78,7 +78,7 @@ public class AccountService implements IAccountService{
 
     @Override
     public void transfer(long fromId, long toId, BigDecimal amount) throws ExecutionException, InterruptedException {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         context.put("fromId", fromId);
         context.put("toId", toId);
         context.put("amount", amount);

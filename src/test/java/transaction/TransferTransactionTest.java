@@ -14,6 +14,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
@@ -43,7 +44,7 @@ public class TransferTransactionTest {
 
     @Test
     public void run_emptyIdToShouldThrow() {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         Long idFrom = 123L;
         BigDecimal amount = new BigDecimal(100);
         context.put("amount", amount);
@@ -56,7 +57,7 @@ public class TransferTransactionTest {
 
     @Test
     public void run_emptyIdFromShouldThrow() {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         Long idTo = 123L;
         BigDecimal amount = new BigDecimal(100);
         context.put("amount", amount);
@@ -69,7 +70,7 @@ public class TransferTransactionTest {
 
     @Test
     public void run_emptyAmountShouldThrow() {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         Long idTo = 123L;
         Long idFrom = 124L;
         context.put("toId", idTo);
@@ -83,7 +84,7 @@ public class TransferTransactionTest {
 
     @Test
     public void run_shouldUpdateRepository() {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         final Long idTo = 123L;
         final Long idFrom = 124L;
         final BigDecimal amount = new BigDecimal(100);

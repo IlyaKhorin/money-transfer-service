@@ -10,7 +10,7 @@ public class LongUniqueGeneratorTest {
     private LongUniqueGenerator sut;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         sut = new LongUniqueGenerator();
     }
 

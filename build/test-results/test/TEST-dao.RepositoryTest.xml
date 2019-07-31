@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="dao.RepositoryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-07-28T19:17:19" hostname="MSI" time="0.015">
+<testsuite name="dao.RepositoryTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-07-31T20:00:26" hostname="MSI" time="0.022">
   <properties/>
-  <testcase name="delete" classname="dao.RepositoryTest" time="0.013"/>
-  <testcase name="update" classname="dao.RepositoryTest" time="0.0"/>
+  <testcase name="delete" classname="dao.RepositoryTest" time="0.018"/>
+  <testcase name="update" classname="dao.RepositoryTest" time="0.001"/>
   <testcase name="add_shouldAddValue" classname="dao.RepositoryTest" time="0.001"/>
-  <testcase name="get_shouldReturnValue" classname="dao.RepositoryTest" time="0.0"/>
+  <testcase name="get_shouldReturnValue" classname="dao.RepositoryTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

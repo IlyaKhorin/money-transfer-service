@@ -7,7 +7,7 @@ import dao.dto.AccountDto;
 import service.Account;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
+import java.util.Map;
 
 public class TransferTransaction implements ITransaction<Void> {
     private final IRepository<Long, AccountDto> repository;
@@ -18,7 +18,7 @@ public class TransferTransaction implements ITransaction<Void> {
     }
 
     @Override
-    public Void Run(HashMap<String, Object> context) {
+    public Void Run(Map<String, Object> context) {
         Long fromId = (Long)context.get("fromId");
         if(fromId == null) throw new IllegalArgumentException("Context should have account fromId to transfer");
         Long toId = (Long)context.get("toId");

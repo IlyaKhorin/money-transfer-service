@@ -7,7 +7,7 @@ import dao.dto.AccountDto;
 import service.Account;
 
 import java.math.BigDecimal;
-import java.util.HashMap;
+import java.util.Map;
 
 public class WithdrawTransaction implements ITransaction<Void> {
     private final IRepository<Long, AccountDto> repository;
@@ -18,7 +18,7 @@ public class WithdrawTransaction implements ITransaction<Void> {
     }
 
     @Override
-    public Void Run(HashMap<String, Object> context) {
+    public Void Run(Map<String, Object> context) {
         Long id = (Long)context.get("id");
         if(id == null) throw new IllegalArgumentException("Context should have account id to withdraw");
         BigDecimal amount = (BigDecimal)context.get("amount");

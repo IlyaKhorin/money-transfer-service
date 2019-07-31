@@ -6,12 +6,6 @@ import api.IWebServer;
 import api.WebServer;
 import com.google.inject.AbstractModule;
 import com.google.inject.multibindings.Multibinder;
-import com.google.inject.multibindings.MultibinderBinding;
-import dao.IRepository;
-import dao.Repository;
-import transaction.ITransactionManager;
-import transaction.TransactionManager;
-
 
 public class ApiModule extends AbstractModule {
 

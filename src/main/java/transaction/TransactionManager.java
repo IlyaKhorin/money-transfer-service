@@ -5,7 +5,7 @@ import com.google.inject.Singleton;
 import exception.TransactionQueueIsFullException;
 import settings.TransactionSettings;
 
-import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.*;
 
 
@@ -23,11 +23,11 @@ public class TransactionManager implements ITransactionManager {
     public TransactionManager(TransactionSettings settings) {
         executorService = new ThreadPoolExecutor(1, 1,
                         0L, TimeUnit.MILLISECONDS,
-                        new ArrayBlockingQueue<Runnable>(settings.getCapacity(),settings.isFair()));
+                new ArrayBlockingQueue<>(settings.getCapacity(), settings.isFair()));
     }
 
     @Override
-    public <T> Future<T> submit(ITransaction<T> transaction, HashMap<String, Object> context) {
+    public <T> Future<T> submit(ITransaction<T> transaction, Map<String, Object> context) {
         try {
             return executorService.submit(() -> transaction.Run(context));
         } catch (RejectedExecutionException ex){

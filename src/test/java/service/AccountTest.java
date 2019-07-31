@@ -12,7 +12,6 @@ import static org.junit.Assert.*;
 
 public class AccountTest {
 
-    private long id = 1;
     private BigDecimal initialBalance = BigDecimal.valueOf(100);
     private Account sut;
 
@@ -22,6 +21,7 @@ public class AccountTest {
 
     @Before
     public void setUp(){
+        long id = 1;
         sut = new Account(id,initialBalance);
     }
 

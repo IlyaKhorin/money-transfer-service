@@ -4,6 +4,7 @@ import com.google.inject.Inject;
 import exception.NotFoundException;
 
 import java.util.Collection;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -14,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 public class Repository<TKey, TValue extends IKeyedValue<TKey>> implements IRepository<TKey, TValue> {
 
     private IUniqueGenerator<TKey> keyGenerator;
-    private ConcurrentHashMap<TKey,TValue> storage = new ConcurrentHashMap<>();
+    private Map<TKey,TValue> storage = new ConcurrentHashMap<>();
 
     @Inject
     public Repository(IUniqueGenerator<TKey> keyGenerator) {

@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicLong;
 @Singleton
 public class LongUniqueGenerator implements IUniqueGenerator<Long> {
 
-    AtomicLong counter = new AtomicLong();
+    private AtomicLong counter = new AtomicLong();
 
     @Override
     public Long getNext() {

@@ -1,7 +1,6 @@
 package transaction;
 
 import dao.IRepository;
-import dao.IUniqueGenerator;
 import dao.dto.AccountDto;
 import org.junit.Before;
 import org.junit.Rule;
@@ -14,10 +13,10 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.HashMap;
+import java.util.Map;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -43,7 +42,7 @@ public class DepositTransactionTest {
 
     @Test
     public void run_emptyIdShouldThrow() {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         BigDecimal amount = new BigDecimal(100);
         context.put("amount", amount);
 
@@ -54,7 +53,7 @@ public class DepositTransactionTest {
 
     @Test
     public void run_emptyAmountShouldThrow() {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         Long id = 123L;
         context.put("id", id);
 
@@ -66,7 +65,7 @@ public class DepositTransactionTest {
 
     @Test
     public void run_shouldUpdateRepository() {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         final Long id = 123L;
         final BigDecimal amount = new BigDecimal(100);
         final BigDecimal balance = new BigDecimal(100);

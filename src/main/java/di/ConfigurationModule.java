@@ -1,8 +1,6 @@
 package di;
 
 import com.google.inject.AbstractModule;
-import dao.IRepository;
-import dao.Repository;
 import settings.TransactionSettings;
 import settings.WebServerSettings;
 

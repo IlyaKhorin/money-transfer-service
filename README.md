@@ -19,3 +19,9 @@ pre-installed container/server).
 **Implicit requirements:**
 1. The code produced by you is expected to be of high quality.
 2. There are no detailed requirements, use common sense.
+
+## Simplifications
+1. No Auth
+2. InMemory Db implemented by HashMap
+3. No transaction rollback, persistance
+4. **My primary skill is C# so something in code may look wierd**

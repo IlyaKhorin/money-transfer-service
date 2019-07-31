@@ -2,14 +2,12 @@ package api;
 
 import com.google.inject.Inject;
 import settings.WebServerSettings;
-import spark.Service;
 import spark.Spark;
 
 import java.util.Set;
 
 import static spark.Spark.before;
 import static spark.Spark.port;
-import static spark.route.HttpMethod.before;
 
 public class WebServer implements IWebServer {
     private final WebServerSettings settings;
@@ -24,9 +22,7 @@ public class WebServer implements IWebServer {
     @Override
     public void start() {
         port(settings.getPort());
-        before((req, res) -> {
-            res.type("application/json");
-        });
+        before((req, res) -> res.type("application/json"));
         for (IApiController controller : controllers) {
             controller.setUp();
         }

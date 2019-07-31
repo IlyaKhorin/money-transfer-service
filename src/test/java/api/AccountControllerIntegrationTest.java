@@ -5,15 +5,12 @@ import io.restassured.response.ValidatableResponse;
 import org.eclipse.jetty.http.HttpStatus;
 import org.junit.Assert;
 import org.junit.Test;
-import service.Account;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
-import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 public class AccountControllerIntegrationTest extends ApiTestBase {
 
@@ -65,10 +62,10 @@ public class AccountControllerIntegrationTest extends ApiTestBase {
                 .body()
                 .as(AccountDto[].class);
 
-        AccountDto actual1 = Arrays.stream(actual).filter(accountDto -> accountDto.getId() == accountId1).findFirst().get();
+        AccountDto actual1 = Arrays.stream(actual).filter(accountDto -> accountDto.getId().equals(accountId1)).findFirst().get();
         assertEquals(0, balance1.compareTo(actual1.getBalance()));
 
-        AccountDto actual2 = Arrays.stream(actual).filter(accountDto -> accountDto.getId() == accountId2).findFirst().get();
+        AccountDto actual2 = Arrays.stream(actual).filter(accountDto -> accountDto.getId().equals(accountId2)).findFirst().get();
         assertEquals(0, balance2.compareTo(actual2.getBalance()));
     }
 

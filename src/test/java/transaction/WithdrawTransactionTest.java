@@ -14,6 +14,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
@@ -41,7 +42,7 @@ public class WithdrawTransactionTest {
 
     @Test
     public void run_emptyIdShouldThrow() throws InterruptedException {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         BigDecimal amount = new BigDecimal(100);
         context.put("amount", amount);
 
@@ -52,7 +53,7 @@ public class WithdrawTransactionTest {
 
     @Test
     public void run_emptyAmountShouldThrow() throws InterruptedException {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         Long id = 123L;
         context.put("id", id);
 
@@ -63,8 +64,8 @@ public class WithdrawTransactionTest {
     }
 
     @Test
-    public void run_shouldUpdateRepository() throws InterruptedException {
-        HashMap<String, Object> context = new HashMap<>();
+    public void run_shouldUpdateRepository() {
+        Map<String, Object> context = new HashMap<>();
         final Long id = 123L;
         final BigDecimal amount = new BigDecimal(100);
         final BigDecimal balance = new BigDecimal(120);

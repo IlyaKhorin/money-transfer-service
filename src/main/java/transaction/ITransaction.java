@@ -1,7 +1,7 @@
 package transaction;
 
-import java.util.HashMap;
+import java.util.Map;
 
 public interface ITransaction<T> {
-    T Run(HashMap<String,Object> context);
+    T Run(Map<String,Object> context);
 }

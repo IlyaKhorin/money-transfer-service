@@ -7,18 +7,14 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
-import org.mockito.ArgumentCaptor;
-import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.Map;
 
-import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
 public class DeleteAccountTransactionTest {
@@ -38,7 +34,7 @@ public class DeleteAccountTransactionTest {
 
     @Test
     public void run_emptyIdShouldThrow() {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
 
         expectedException.expect(IllegalArgumentException.class);
         expectedException.expectMessage("Context should have account id to delete");
@@ -47,7 +43,7 @@ public class DeleteAccountTransactionTest {
 
     @Test
     public void run_shouldUpdateRepository()  {
-        HashMap<String, Object> context = new HashMap<>();
+        Map<String, Object> context = new HashMap<>();
         final Long id = 123L;
         context.put("id", id);
 
