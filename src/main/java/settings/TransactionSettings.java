@@ -1,5 +1,8 @@
 package settings;
 
+/**
+ * Represents general settings for {@link transaction.TransactionManager}
+ */
 public class TransactionSettings {
     private int capacity;
     private boolean fair;
@@ -9,19 +12,17 @@ public class TransactionSettings {
         this.fair = fair;
     }
 
+    /**
+     * @return Returns maximum capacity of transaction queue
+     */
     public int getCapacity() {
         return capacity;
     }
 
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
-    }
-
+    /**
+     * @return Returns flag whether transaction queue should be ordered or not
+     */
     public boolean isFair() {
         return fair;
-    }
-
-    public void setFair(boolean fair) {
-        this.fair = fair;
     }
 }

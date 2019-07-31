@@ -1,7 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45e93021-4e2b-420b-9d0a-0c9d4b5498f8" name="Default Changelist" comment="" />
+    <list default="true" id="45e93021-4e2b-420b-9d0a-0c9d4b5498f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/dao.RepositoryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/dao.RepositoryTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/transaction.TransactionManagerTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/transaction.TransactionManagerTest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/dao.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/dao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/transaction.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/transaction.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-dao.RepositoryTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-dao.RepositoryTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-transaction.TransactionManagerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-transaction.TransactionManagerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/IApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/IApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/IWebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/IWebServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/WebServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/WebServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IUniqueGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IUniqueGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/LongUniqueGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/LongUniqueGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/Repository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/Repository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/di/ApiModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/di/ApiModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/di/ConfigurationModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/di/ConfigurationModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/di/ServiceModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/di/ServiceModule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/IAccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/IAccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/settings/TransactionSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/TransactionSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/settings/WebServerSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/settings/WebServerSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/transaction/DeleteAccountTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transaction/DeleteAccountTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/transaction/DepositTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transaction/DepositTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/transaction/ITransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transaction/ITransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/transaction/TransactionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transaction/TransactionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/transaction/TransferTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transaction/TransferTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/transaction/WithdrawTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transaction/WithdrawTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/AccountControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/AccountControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api/ApiTestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api/ApiTestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/LongUniqueGeneratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/LongUniqueGeneratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/RepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/RepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/AccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/AccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/transaction/DeleteAccountTransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/transaction/DeleteAccountTransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/transaction/DepositTransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/transaction/DepositTransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/transaction/TransactionManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/transaction/TransactionManagerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/transaction/TransferTransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/transaction/TransferTransactionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/transaction/WithdrawTransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/transaction/WithdrawTransactionTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +66,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="203" />
+    <option name="myElementSize" value="212" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -36,20 +93,28 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Oaes9e33l2CDf5RbsAG81N9JLb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/dao" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="transaction" />
+      <recent name="api" />
+      <recent name="service" />
       <recent name="dao" />
+      <recent name="transaction" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -61,14 +126,17 @@
       <recent name="D:\projects\money-transfer-service\src\main\java\dao" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="api" />
+      <recent name="transaction" />
+      <recent name="di" />
       <recent name="exception" />
       <recent name="service.dto" />
-      <recent name="dao.exception" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="dao" />
+      <recent name="api" />
       <recent name="settings" />
       <recent name="transaction" />
-      <recent name="dao" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -83,13 +151,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'money-transfer-service'">
-    <configuration name="RepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.Tests in 'money-transfer-service.test'">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="money-transfer-service.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountControllerIntegrationTest.deposit_shouldReturn400" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;dao.RepositoryTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;api.AccountControllerIntegrationTest.deposit_shouldReturn400&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -104,7 +179,47 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'money-transfer-service'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AccountControllerIntegrationTest.transfer" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;api.AccountControllerIntegrationTest.transfer&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="AccountControllerIntegrationTest.withdraw_shouldReturn400" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;api.AccountControllerIntegrationTest.withdraw_shouldReturn400&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Tests in 'money-transfer-service.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -124,73 +239,13 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TransactionManagerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;transaction.TransactionManagerTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TransactionManagerTest.queue_shouldCompleteTask" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;transaction.TransactionManagerTest.queue_shouldCompleteTask&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="TransactionManagerTest.queue_shouldThrowQueueOverflow" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;transaction.TransactionManagerTest.queue_shouldThrowQueueOverflow&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'money-transfer-service'" />
-        <item itemvalue="Gradle.TransactionManagerTest" />
-        <item itemvalue="Gradle.TransactionManagerTest.queue_shouldThrowQueueOverflow" />
-        <item itemvalue="Gradle.TransactionManagerTest.queue_shouldCompleteTask" />
-        <item itemvalue="Gradle.RepositoryTest" />
+        <item itemvalue="Gradle.Tests in 'money-transfer-service.test'" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Gradle.AccountControllerIntegrationTest.deposit_shouldReturn400" />
+        <item itemvalue="Gradle.AccountControllerIntegrationTest.transfer" />
+        <item itemvalue="Gradle.AccountControllerIntegrationTest.withdraw_shouldReturn400" />
       </list>
     </recent_temporary>
   </component>
@@ -204,22 +259,31 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/transaction/TransactionManager.java</url>
-          <line>23</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="6" />
+          <url>file://$PROJECT_DIR$/src/main/java/transaction/TransferTransaction.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/money_transfer_service$Tests_in__money_transfer_service_.ic" NAME="Tests in 'money-transfer-service' Coverage Results" MODIFIED="1564266813365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/money_transfer_service$Tests_in__money_transfer_service_.ic" NAME="Tests in 'money-transfer-service' Coverage Results" MODIFIED="1564329800242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/money_transfer_service$Tests_in__money_transfer_service_test_.ic" NAME="Tests in 'money-transfer-service.test' Coverage Results" MODIFIED="1564340443713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/money_transfer_service$TransactionManagerTest.ic" NAME="TransactionManagerTest Coverage Results" MODIFIED="1564266766154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

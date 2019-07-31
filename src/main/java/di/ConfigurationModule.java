@@ -6,7 +6,7 @@ import dao.Repository;
 import settings.TransactionSettings;
 import settings.WebServerSettings;
 
-public class ConfigrationModule extends AbstractModule {
+public class ConfigurationModule extends AbstractModule {
 
     @Override
     protected void configure() {

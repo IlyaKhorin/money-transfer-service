@@ -33,7 +33,7 @@ public class TransactionManagerTest {
         HashMap<String, Object> context = new HashMap<>();
         context.put("value", expectedResult);
 
-        Future<Object> future = sut.queue(c -> c.get("value"), context);
+        Future<Object> future = sut.submit(c -> c.get("value"), context);
 
         assertEquals(expectedResult,future.get());
     }
@@ -42,7 +42,7 @@ public class TransactionManagerTest {
     public void queue_shouldThrowQueueOverflow() throws ExecutionException, InterruptedException {
         HashMap<String, Object> context = new HashMap<>();
 
-        Future<Object> future = sut.queue(c -> {
+        Future<Object> future = sut.submit(c -> {
             try {
                 Thread.sleep(5_000);
             } catch (InterruptedException ignored) {
@@ -52,8 +52,8 @@ public class TransactionManagerTest {
 
         expectedException.expect(TransactionQueueIsFullException.class);
         assertFalse(future.isDone());
-        sut.queue(c -> null,context);
-        sut.queue(c -> null,context);
+        sut.submit(c -> null,context);
+        sut.submit(c -> null,context);
     }
 
     @After

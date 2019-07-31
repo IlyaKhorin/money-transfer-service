@@ -1,4 +1,5 @@
 package api;
 
-public class IApiController {
+public interface IApiController {
+    void setUp();
 }

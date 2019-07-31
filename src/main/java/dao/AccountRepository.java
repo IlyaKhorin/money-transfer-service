@@ -1,14 +1,14 @@
-package dao.dto;
+package dao;
 
+import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import com.google.inject.name.Named;
-import dao.IUniqueGenerator;
-import dao.Repository;
+import dao.dto.AccountDto;
 
 @Singleton
 public class AccountRepository extends Repository<Long, AccountDto> {
-
-    public AccountRepository(@Named("LongAtomic") IUniqueGenerator keyGenerator) {
+    @Inject
+    public AccountRepository(@Named("LongAtomic") IUniqueGenerator<Long> keyGenerator) {
         super(keyGenerator);
     }
 }

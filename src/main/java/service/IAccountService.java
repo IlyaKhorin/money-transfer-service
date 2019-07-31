@@ -1,19 +1,21 @@
 package service;
 
-import java.util.List;
+import java.math.BigDecimal;
+import java.util.Collection;
+import java.util.concurrent.ExecutionException;
 
 public interface IAccountService {
-    Account create(double balance);
+    Account create();
 
     Account get(long id);
 
-    void delete(long id);
+    void delete(long id) throws ExecutionException, InterruptedException;
 
-    void withdraw(long id, double amount);
+    void withdraw(long id, BigDecimal amount) throws InterruptedException, ExecutionException;
 
-    void deposit(long id, double amount);
+    void deposit(long id, BigDecimal amount) throws ExecutionException, InterruptedException;
 
-    void transfer(long fromId, long toId, double amount);
+    void transfer(long fromId, long toId, BigDecimal amount) throws ExecutionException, InterruptedException;
 
-    List<Account> getAll();
+    Collection<Account> getAll();
 }

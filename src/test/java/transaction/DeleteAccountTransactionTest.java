@@ -21,9 +21,9 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class WithdrawTransactionTest {
+public class DeleteAccountTransactionTest {
 
-    private WithdrawTransaction sut;
+    private DeleteAccountTransaction sut;
 
     @Mock
     public IRepository<Long, AccountDto> repository;
@@ -31,56 +31,28 @@ public class WithdrawTransactionTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
 
-    @Captor
-    private ArgumentCaptor<AccountDto> accountArgumentCaptor;
-
     @Before
     public void setUp(){
-        sut = new WithdrawTransaction(repository);
+        sut = new DeleteAccountTransaction(repository);
     }
 
     @Test
-    public void run_emptyIdShouldThrow() throws InterruptedException {
+    public void run_emptyIdShouldThrow() {
         HashMap<String, Object> context = new HashMap<>();
-        BigDecimal amount = new BigDecimal(100);
-        context.put("amount", amount);
 
         expectedException.expect(IllegalArgumentException.class);
-        expectedException.expectMessage("Context should have account id to withdraw");
-        sut.Run(context).wait();
+        expectedException.expectMessage("Context should have account id to delete");
+        sut.Run(context);
     }
 
     @Test
-    public void run_emptyAmountShouldThrow() throws InterruptedException {
-        HashMap<String, Object> context = new HashMap<>();
-        Long id = 123L;
-        context.put("id", id);
-
-        expectedException.expect(IllegalArgumentException.class);
-        expectedException.expectMessage("Context should have amount to withdraw");
-
-        sut.Run(context).wait();
-    }
-
-    @Test
-    public void run_shouldUpdateRepository() throws InterruptedException {
+    public void run_shouldUpdateRepository()  {
         HashMap<String, Object> context = new HashMap<>();
         final Long id = 123L;
-        final BigDecimal amount = new BigDecimal(100);
-        final BigDecimal balance = new BigDecimal(120);
-        final BigDecimal expectedBalance = balance.subtract(amount);
         context.put("id", id);
-        context.put("amount", amount);
-
-        AccountDto testAccount = new AccountDto();
-        testAccount.setId(id);
-        testAccount.setBalance(balance);
-
-        when(repository.get(id)).thenReturn(testAccount);
 
         sut.Run(context);
 
-        verify(repository).update(eq(id), accountArgumentCaptor.capture());
-        assertEquals(expectedBalance, accountArgumentCaptor.getValue().getBalance());
+        verify(repository).delete(eq(id));
     }
 }

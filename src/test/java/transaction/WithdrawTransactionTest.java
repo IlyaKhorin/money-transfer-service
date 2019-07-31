@@ -1,7 +1,6 @@
 package transaction;
 
 import dao.IRepository;
-import dao.IUniqueGenerator;
 import dao.dto.AccountDto;
 import org.junit.Before;
 import org.junit.Rule;
@@ -14,18 +13,17 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.HashMap;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @RunWith(MockitoJUnitRunner.class)
-public class DepositTransactionTest {
+public class WithdrawTransactionTest {
 
-    private DepositTransaction sut;
+    private WithdrawTransaction sut;
 
     @Mock
     public IRepository<Long, AccountDto> repository;
@@ -38,7 +36,7 @@ public class DepositTransactionTest {
 
     @Before
     public void setUp(){
-        sut = new DepositTransaction(repository);
+        sut = new WithdrawTransaction(repository);
     }
 
     @Test
@@ -48,7 +46,7 @@ public class DepositTransactionTest {
         context.put("amount", amount);
 
         expectedException.expect(IllegalArgumentException.class);
-        expectedException.expectMessage("Context should have account id to deposit");
+        expectedException.expectMessage("Context should have account id to withdraw");
         sut.Run(context).wait();
     }
 
@@ -59,7 +57,7 @@ public class DepositTransactionTest {
         context.put("id", id);
 
         expectedException.expect(IllegalArgumentException.class);
-        expectedException.expectMessage("Context should have amount to deposit");
+        expectedException.expectMessage("Context should have amount to withdraw");
 
         sut.Run(context).wait();
     }
@@ -69,8 +67,8 @@ public class DepositTransactionTest {
         HashMap<String, Object> context = new HashMap<>();
         final Long id = 123L;
         final BigDecimal amount = new BigDecimal(100);
-        final BigDecimal balance = new BigDecimal(100);
-        final BigDecimal expectedBalance = amount.add(balance);
+        final BigDecimal balance = new BigDecimal(120);
+        final BigDecimal expectedBalance = balance.subtract(amount);
         context.put("id", id);
         context.put("amount", amount);
 

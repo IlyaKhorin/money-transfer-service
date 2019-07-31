@@ -48,10 +48,9 @@ public class RepositoryTest {
 
         TestDto expectedValue = new TestDto();
 
-        Long actualId = sut.add(expectedValue);
+        TestDto actual = sut.add(expectedValue);
 
-        assertEquals(expectedId, actualId);
-        assertEquals(expectedValue, sut.get(actualId));
+        assertEquals(expectedValue, actual);
     }
 
     @Test
@@ -67,15 +66,12 @@ public class RepositoryTest {
 
         sut.add(dto);
 
-        TestDto oldValue = sut.get(id);
-        assertEquals(oldString, oldValue.value);
+        TestDto expectedDto = new TestDto();
+        expectedDto.setValue(newExpectedString);
 
-        sut.update(id,testDto -> {
-            testDto.setValue(newExpectedString);
-            return testDto;
-        });
+        TestDto updatedValue =sut.update(id, expectedDto);
 
-        TestDto updatedValue = sut.get(id);
+        assertEquals(expectedDto, updatedValue);
         assertEquals(newExpectedString, updatedValue.value);
     }
 

@@ -1,6 +1,6 @@
 package api;
 
-public interface IApiController {
+public interface IWebServer {
     void start();
     void stop();
 }

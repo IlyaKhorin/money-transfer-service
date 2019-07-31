@@ -1,9 +1,10 @@
 package dao;
 
+import com.google.inject.Inject;
 import exception.NotFoundException;
 
+import java.util.Collection;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.function.Function;
 
 /**
  * Generic implementation of thread safe in-memory repository
@@ -15,6 +16,7 @@ public class Repository<TKey, TValue extends IKeyedValue<TKey>> implements IRepo
     private IUniqueGenerator<TKey> keyGenerator;
     private ConcurrentHashMap<TKey,TValue> storage = new ConcurrentHashMap<>();
 
+    @Inject
     public Repository(IUniqueGenerator<TKey> keyGenerator) {
         this.keyGenerator = keyGenerator;
     }
@@ -30,16 +32,22 @@ public class Repository<TKey, TValue extends IKeyedValue<TKey>> implements IRepo
     }
 
     @Override
-    public TKey add(TValue value) {
-        TKey key = keyGenerator.getNext();
-        value.setId(key);
-        storage.put(key, value);
-        return key;
+    public Collection<TValue> getAll() {
+        return storage.values();
     }
 
     @Override
-    public void update(TKey id, Function<TValue,TValue> updateFunc) {
-        storage.computeIfPresent(id, (tKey, tValue) -> updateFunc.apply(tValue));
+    public TValue add(TValue value) {
+        TKey key = keyGenerator.getNext();
+        value.setId(key);
+        storage.put(key, value);
+        return value;
+    }
+
+    @Override
+    public TValue update(TKey id, TValue value) {
+        storage.computeIfPresent(id, (tKey, tValue) -> value);
+        return value;
     }
 
     @Override

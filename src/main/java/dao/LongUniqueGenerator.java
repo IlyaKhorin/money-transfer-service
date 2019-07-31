@@ -1,4 +1,16 @@
 package dao;
 
-public class LongUniqueGenerator {
+import com.google.inject.Singleton;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+@Singleton
+public class LongUniqueGenerator implements IUniqueGenerator<Long> {
+
+    AtomicLong counter = new AtomicLong();
+
+    @Override
+    public Long getNext() {
+        return counter.incrementAndGet();
+    }
 }
